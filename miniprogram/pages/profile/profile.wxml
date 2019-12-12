@@ -1,0 +1,11 @@
+<view class="profile">
+    <view class="profile-img">
+        <open-data type="userAvatarUrl"></open-data>
+    </view>
+<open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<view>这里不知道该写什么</view>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button> -->
+<!-- <view>
+    <button>想看</button>
+</view> -->

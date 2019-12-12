@@ -1,0 +1,23 @@
+<view class="movie" wx:for="{{movieList}}" wx:key="{{index}}">
+<!-- <view class="movie-info-top">
+    <view class="movie_num">{{index + 1}}</view>
+</view> -->
+    <image class="movie-img" src="{{item.images.small}}"></image>
+    <view class="movie-info">
+        <button bindtap="gotoTopdetail" data-movieid="{{item.id}}" data-hasvideo="{{item.has_video}}" class="movie-comment">
+            <view class="moviego">查看</view>
+        </button>
+        <view class="movie-title">{{item.title}}</view>
+        <view>观众评分:
+            <text class="movie-score">{{item.rating.average}}分</text>
+        </view>
+        <view>类型:
+            <text wx:for="{{item.genres}}" wx:key="{{index}}">{{item}} </text>
+        </view>
+        <view>主演:
+            <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
+        </view>
+        <view class="movie-num">Top {{index + 1}}</view>
+        <view>年份:{{item.year}}</view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+@import '../../style/movie.wxss';
+
+.movie-num{
+  /* width: 70rpx; */
+  /* height: 70rpx; */
+  /* text-align: center; */
+  /* border-radius: 5rpx; */
+  /* background: #1abc9c; */
+  float: right;
+  color: #bbb
+}

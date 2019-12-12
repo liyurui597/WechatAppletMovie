@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/profile/profile",
+    "pages/comment/comment",
+    "pages/topmovie/topmovie",
+    "pages/topdetail/topdetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1abc9c",
+    "navigationBarTitleText": "电影鸭",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7f7f7f",
+    "selectedColor": "#1abc9c",
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "正在上映",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie-actived.png"
+      },
+      {
+        "pagePath": "pages/topmovie/topmovie",
+        "text": "Top",
+        "iconPath": "images/top.png",
+        "selectedIconPath": "images/top-actived.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap63.json"
+}

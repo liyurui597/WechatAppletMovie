@@ -1,0 +1,25 @@
+<view>
+    <view class="detail-container" style="background:url({{detail.images.large}}) no-repeat top/cover"></view>
+    <view class="detail-mask"></view>
+    <view class="detail-info">
+        <image src="{{detail.images.large}}" class="detail-img"></image>
+        <view class="detail">
+            <view class="detail-nm">{{detail.title}}</view>
+            <view>{{detail.original_title}}</view>
+            <view class="detail.sc">{{detail.rating.average}}分</view>
+            <view>{{detail.countries[0]}}</view>
+            <view>导演：{{detail.directors[0].name}}</view>
+        </view>
+    </view> 
+    <view class="desc">{{detail.summary}}</view>
+    <!-- <view style="display:{{page=='!aVideo'?'none':'inline-block'}};width:100%;"> -->
+    <view hidden="{{!aVideo}}">
+        <view class="catalog">观看地址： </view>
+        <view wx:for="{{detail.videos}}" wx:key="{{index}}">
+            <view class="list">
+                <view class="list-title">{{item.source.name}}:</view>
+                <button class="copy-comment" size="default" bindtap="copyhref" data-text="{{item.sample_link}}" type="copy">复制链接</button>
+            </view>
+        </view>
+    </view>
+</view>
